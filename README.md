@@ -27,3 +27,17 @@ Retorna a lista completa de carros disponíveis.
 
 ### Exemplo de Resposta:
 
+```json
+[
+     {
+    "nome": "Ferrari",
+    "sigla": "FER",
+    "velocidadeMaxima": 340,
+    "potencia": 800,
+    "consumo": 5.5,
+    "aceleracao": 2.9,
+    "preço": 300000
+
+     },
+]
+```
