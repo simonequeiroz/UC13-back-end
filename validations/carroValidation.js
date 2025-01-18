@@ -5,8 +5,8 @@ import Joi from "joi";
 export const modeloCarro = Joi.object({
     nome: Joi.string().min(3).required().messages({
         'string.min': 'o nome do carro deve ter pelo menos 3 caracteres.',
-        'any.required': 'O nome do carro é Obrigatório',        
-    }), 
+        'any.required': 'O nome do carro é Obrigatório',
+    }),
     sigla: Joi.string().length(3).required().messages({
         'string.length': 'A sigla deve ter exatamente 3 caracteres.',
         'any.required': 'A sigla é obrigatória.',
@@ -31,7 +31,7 @@ export const modeloCarro = Joi.object({
         'number.min': 'O preço deve ser maior ou igual a 1.',
         'any.required': 'o preço é obrigatório.',
     }) // Preço min. de 0
-}); 
+});
 
 //Validação para atualização do carro
 export const modeloAtualizacaoCarro = Joi.object({

@@ -1,4 +1,4 @@
-let tabelacarros = [
+let carros2024 = [
     {
         nome: "Ferrari",
         sigla: "FER",
@@ -76,9 +76,9 @@ export const updateCarro = (sigla, dadosAtualizados) => {
     const carroIndex = carros2024.findIndex(carro => carro.sigla === sigla);
     if (carroIndex === -1) return null;
     //Atualiza os dados do carro com as informações fornecidas 
-    carros2024[carroIndex] = { ...carros2024[carroIndex], ...dadosAtualizados};
+    carros2024[carroIndex] = { ...carros2024[carroIndex], ...dadosAtualizados };
     return carros2024[carroIndex];
-}; 
+};
 
 //Função que remove um carro do array, com base na sigla
 export const deleteCarro = (sigla) => {
@@ -87,5 +87,5 @@ export const deleteCarro = (sigla) => {
     if (carroIndex === -1) return null; // Se não encontrar o carro retorna Null
     //Remove o carro da lista e retorna o carro removido
     const [carroRemovido] = carros2024.splice(carroIndex, 1);
-    return carroRemovido; 
+    return carroRemovido;
 };
